@@ -43,28 +43,9 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   // -----------------------------------------------------------------------
-  // 2. KARYA & PROYEK PORTOFOLIO (Coming Soon)
+  // 2. KARYA & PROYEK PORTOFOLIO (Kosong)
   // -----------------------------------------------------------------------
-  projects: [
-    {
-      id: "net-lab-soon",
-      title: "Arsitektur & Dokumentasi Lab Jaringan",
-      slug: "lab-jaringan-coming-soon",
-      tagline: "Dokumentasi implementasi routing & switching Cisco IOS dan MikroTik RouterOS segera hadir.",
-      description: "Perancangan topologi jaringan, konfigurasi inter-VLAN routing, protokol routing dinamis, manajemen bandwidth, dan implementasi firewall sedang dalam proses pengujian lab dan penyusunan dokumentasi. Hasil konfigurasi dan skema jaringan akan segera dirilis.",
-      featured: true,
-      status: "Dalam Proses",
-      isComingSoon: true,
-      role: "Network Enthusiast",
-      year: "2025",
-      techStack: ["Cisco IOS", "MikroTik RouterOS"],
-      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
-      highlights: [
-        "Sedang dalam tahap perancangan topologi lab Cisco IOS & MikroTik",
-        "Dokumentasi konfigurasi dan skema jaringan akan segera dipublikasikan",
-      ],
-    },
-  ],
+  projects: [],
 
   // -----------------------------------------------------------------------
   // 3. TEKNOLOGI & EKOSISTEM (Tech Stack)

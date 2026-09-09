@@ -12,6 +12,8 @@ export const MotionSection: React.FC<MotionSectionProps> = ({
   className,
   delay = 0,
 }) => {
+  if (!children) return null;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
