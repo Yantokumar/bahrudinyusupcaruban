@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { PhotoMemory } from '../../types';
 import { ArrowRight, RotateCw, MapPin, Calendar, Grab } from 'lucide-react';
-import confetti from 'canvas-confetti';
 import { BorderBeam } from './BorderBeam';
 
 interface CardDeckProps {
@@ -14,24 +13,10 @@ export const CardDeck: React.FC<CardDeckProps> = ({ cards }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
-    confetti({
-      particleCount: 22,
-      spread: 55,
-      origin: { y: 0.7 },
-      scalar: 0.75,
-      colors: ['#10b981', '#38bdf8', '#fbbf24'],
-    });
     setCurrentIndex((prev) => (prev + 1) % deck.length);
   };
 
   const handleShuffle = () => {
-    confetti({
-      particleCount: 30,
-      spread: 70,
-      origin: { y: 0.7 },
-      scalar: 0.8,
-      colors: ['#3b82f6', '#10b981', '#a855f7'],
-    });
     setDeck((prev) => [...prev].sort(() => Math.random() - 0.5));
     setCurrentIndex(0);
   };
