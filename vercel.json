@@ -1,4 +1,5 @@
 {
+  "name": "minimalis-porto",
   "rewrites": [
     {
       "source": "/(.*)",

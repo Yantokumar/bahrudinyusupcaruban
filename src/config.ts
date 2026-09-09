@@ -56,7 +56,7 @@ export const portfolioConfig: PortfolioConfig = {
       status: "Coming Soon",
       isComingSoon: true,
       role: "Network & Systems",
-      year: "2025",
+      year: "2026",
       techStack: ["--", "--"],
       imageUrl: "/anime.jpg",
     },
