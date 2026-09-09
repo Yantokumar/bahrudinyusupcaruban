@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PixelAvatar } from '../ui/PixelAvatar';
 import { profileData } from '../../data/profile';
-import { FileText, Copy, Check, Sparkles, Activity } from 'lucide-react';
+import { FileText, Copy, Check } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
 export const HeroSection: React.FC = () => {
@@ -56,23 +56,10 @@ export const HeroSection: React.FC = () => {
               <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
                 {profileData.name}
               </h1>
-              <motion.span
-                animate={{ rotate: [0, 15, -10, 0] }}
-                transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 4 }}
-                className="inline-block origin-bottom-right"
-              >
-                <Sparkles className="h-4 w-4 text-sky-500 fill-sky-500/20" />
-              </motion.span>
             </div>
-            <div className="flex items-center gap-1.5 mt-0.5">
-              <p className="font-mono text-xs text-neutral-500 dark:text-neutral-400">
-                {profileData.handle} · {profileData.location.split('/')[0].trim()}
-              </p>
-              <span className="inline-flex items-center gap-1 rounded-full bg-blue-50/80 px-1.5 py-0.2 text-[10px] font-mono text-blue-600 dark:bg-blue-950/40 dark:text-blue-400 border border-blue-200/60 dark:border-blue-800/50">
-                <Activity className="h-2.5 w-2.5 animate-pulse text-blue-500" />
-                <span>LINK UP</span>
-              </span>
-            </div>
+            <p className="font-mono text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
+              {profileData.handle} · {profileData.location.split('/')[0].trim()}
+            </p>
           </div>
         </div>
 
@@ -142,16 +129,8 @@ export const HeroSection: React.FC = () => {
       {/* Rangkuman Statistik Ringkas */}
       <div className="mt-10 grid grid-cols-3 gap-3 border-t border-dashed border-neutral-200 dark:border-neutral-800 pt-6">
         {profileData.stats.map((stat, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.35, delay: i * 0.1 }}
-            whileHover={{ y: -2 }}
-            className="flex flex-col p-2.5 rounded-xl transition-colors hover:bg-neutral-500/5 cursor-default"
-          >
-            <span className="font-mono text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+          <div key={i} className="flex flex-col">
+            <span className="font-mono text-sm sm:text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
               {stat.value}
             </span>
             <span className="text-xs font-medium text-neutral-700 dark:text-neutral-300 mt-0.5">
@@ -162,7 +141,7 @@ export const HeroSection: React.FC = () => {
                 {stat.desc}
               </span>
             )}
-          </motion.div>
+          </div>
         ))}
       </div>
     </motion.section>
