@@ -57,7 +57,7 @@ export const portfolioConfig: PortfolioConfig = {
       isComingSoon: true,
       role: "Network & Systems",
       year: "2025",
-      techStack: ["Cisco IOS", "MikroTik RouterOS"],
+      techStack: ["--", "--"],
       imageUrl: "/anime.jpg",
     },
   ],
