@@ -17,14 +17,14 @@ export const portfolioConfig: PortfolioConfig = {
   profile: {
     name: "Bahrudin Yusup Caruban",
     handle: "Zhyusff.Dev",
-    title: "Network & Infrastructure Engineer",
-    headline: "Mendalami rekayasa jaringan komputer, perancangan routing & switching dengan Cisco IOS dan MikroTik RouterOS.",
-    bioIntro: "Mahasiswa S1 Sistem Informasi di Universitas Pamulang dengan fokus minat mendalam pada rekayasa jaringan komputer, khususnya perangkat Cisco IOS dan MikroTik RouterOS.",
-    bioDetail: "Saat ini sedang menempuh studi S1 Sistem Informasi di Universitas Pamulang, sembari aktif mempelajari dan mempraktikkan konfigurasi topologi jaringan, routing dinamis, manajemen bandwidth, dan firewall pada Cisco dan MikroTik.",
+    title: "Network Engineer (Pemula)",
+    headline: "Pemula yang sedang belajar jaringan komputer dengan Cisco IOS dan MikroTik.",
+    bioIntro: "Mahasiswa S1 Sistem Informasi di Universitas Pamulang, saat ini fokus mempelajari dasar-dasar routing & switching.",
+    bioDetail: "Masih tahap pemula dan terus giat berlatih mengonfigurasi perangkat Cisco dan MikroTik.",
     location: "Indonesia / Tersedia Remote & On-site",
     availability: {
       status: "available",
-      label: "Terbuka untuk peluang Magang & Junior Network Engineer",
+      label: "Terbuka untuk peluang Magang & Belajar",
     },
     socials: {
       github: "https://github.com/yusup007l",
@@ -36,9 +36,9 @@ export const portfolioConfig: PortfolioConfig = {
     avatarUrl: "/profil.png",
     pixelAvatarUrl: "https://api.dicebear.com/7.x/pixel-art/svg?seed=Zhyusff&mood=happy",
     stats: [
-      { label: "Fokus Studi", value: "S1 SI", desc: "Sistem Informasi Universitas Pamulang" },
-      { label: "Perangkat Utama", value: "2 Vendor", desc: "Cisco IOS & MikroTik RouterOS" },
-      { label: "Karya & Lab", value: "Coming Soon", desc: "dalam tahap pengujian dan dokumentasi" },
+      { label: "Status", value: "Pemula", desc: "sedang giat belajar jaringan" },
+      { label: "Studi", value: "S1 SI", desc: "Universitas Pamulang" },
+      { label: "Fokus Lab", value: "Cisco & MikroTik", desc: "perangkat yang dipelajari" },
     ],
   },
 

@@ -83,7 +83,7 @@ export const Chatbot: React.FC = () => {
       return `${profileData.name} (${profileData.handle}) adalah ${profileData.title} yang berdomisili di ${profileData.location}. ${profileData.bioIntro} ${profileData.bioDetail}`;
     }
 
-    return `Terima kasih atas pertanyaannya! Saya fokus mendalami rekayasa jaringan komputer dengan Cisco IOS dan MikroTik RouterOS. Jangan ragu hubungi saya langsung di ${profileData.socials.email}!`;
+    return `Terima kasih atas pertanyaannya! Saya pemula yang sedang giat belajar jaringan komputer dengan Cisco IOS dan MikroTik. Jangan ragu hubungi saya langsung di ${profileData.socials.email}!`;
   };
 
   const handleSendMessage = (textToSend?: string) => {
