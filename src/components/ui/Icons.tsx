@@ -90,6 +90,31 @@ export const BrandIcons: Record<string, React.FC<IconProps>> = {
       <path d="M23.546 10.93L13.067.452a1.5 1.5 0 00-2.124 0L8.835 2.56l3.053 3.053a1.782 1.782 0 012.247 2.26l3.02 3.02a1.782 1.782 0 011.834 2.765l-2.85 2.85a1.782 1.782 0 01-2.765-1.834l-3.02-3.02a1.782 1.782 0 01-1.678-.456l-3.04 3.04a1.782 1.782 0 01.455 1.678l-4.14 4.14a1.5 1.5 0 000 2.124l10.478 10.478a1.5 1.5 0 002.124 0l10.478-10.478a1.5 1.5 0 000-2.124z" />
     </svg>
   ),
+  github: (props) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={props.size || 20} height={props.size || 20} {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+    </svg>
+  ),
+  html5: (props) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={props.size || 20} height={props.size || 20} {...props}>
+      <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059-.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.158H8.531z" />
+    </svg>
+  ),
+  css3: (props) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={props.size || 20} height={props.size || 20} {...props}>
+      <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.24 2.622 10.422.003-.24 2.715H5.892l.24 2.673h10.013l-.68 6.926-3.465.955-3.465-.955-.224-2.454H5.875l.448 4.793 5.677 1.576 5.677-1.576.786-8.877.24-2.673.23-2.673z" />
+    </svg>
+  ),
+  javascript: (props) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={props.size || 20} height={props.size || 20} {...props}>
+      <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.017-.892-1.74-2.28-2.28l-.58-.23c-.76-.32-.93-.6-.93-.97 0-.44.35-.77.95-.77.62 0 .98.31 1.06.81h1.4c-.09-1.23-.95-2-2.46-2-1.63 0-2.44.95-2.44 2.05 0 .96.56 1.53 1.77 2.04l.56.24c.9.38 1.17.7 1.17 1.21 0 .57-.52.9-1.25.9-.93 0-1.33-.49-1.43-1.15h-1.45c.12 1.39 1.07 2.3 2.88 2.3 1.8 0 2.69-.95 2.69-2.16l-.09-.27zm-8.87.27v-8.05h-1.5v8.13c0 1.29-.63 1.85-1.68 1.85-.75 0-1.23-.37-1.46-.87h-1.39c.27 1.28 1.28 2.09 2.85 2.09 1.95 0 3.18-1.04 3.18-3.15z" />
+    </svg>
+  ),
+  php: (props) => (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={props.size || 20} height={props.size || 20} {...props}>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-5.5 13.5l1.2-5.5h2.1c1.2 0 1.9.6 1.7 1.7-.2 1.3-1.1 2.2-2.3 2.2H8.1l-.6 2.6H6.5zm3-3.6h.6c.6 0 1.1-.5 1.2-1.1.1-.6-.2-1-.8-1h-.5l-.5 2.1zm4.9 3.6l1.2-5.5h1.2l-.4 1.8h.1c.4-.7 1.1-1.1 1.9-1.1.9 0 1.5.5 1.3 1.6l-.7 3.2h-1.2l.6-2.9c.1-.6-.1-.9-.6-.9-.5 0-1 .4-1.2 1.1l-.6 2.7H14.4zm5.5 0l1.2-5.5H23c1.2 0 1.9.6 1.7 1.7-.2 1.3-1.1 2.2-2.3 2.2h-1.1l-.6 2.6h-1.8zm3-3.6h.6c.6 0 1.1-.5 1.2-1.1.1-.6-.2-1-.8-1h-.5l-.5 2.1z" />
+    </svg>
+  ),
 };
 
 export const getBrandIcon = (name: string): React.FC<IconProps> | null => {
@@ -101,10 +126,15 @@ export const getBrandIcon = (name: string): React.FC<IconProps> | null => {
   if (normalized.includes('ansible')) return BrandIcons['ansible'];
   if (normalized.includes('linux') || normalized.includes('bash')) return BrandIcons['linux'];
   if (normalized.includes('firewall') || normalized.includes('security') || normalized.includes('vpn')) return BrandIcons['firewall'];
-  if (normalized.includes('network') || normalized.includes('switch') || normalized.includes('router') || normalized.includes('bgp') || normalized.includes('ospf') || normalized.includes('vlan')) return BrandIcons['network'];
-  if (normalized.includes('python')) return BrandIcons['python'];
-  if (normalized.includes('docker')) return BrandIcons['docker'];
-  if (normalized.includes('git')) return BrandIcons['git'];
+  if (normalized.includes('html')) return BrandIcons['html5'];
+  if (normalized.includes('css')) return BrandIcons['css3'];
+  if (normalized.includes('javascript') || normalized === 'js') return BrandIcons['javascript'];
   if (normalized.includes('typescript') || normalized === 'ts') return BrandIcons['typescript'];
+  if (normalized.includes('python')) return BrandIcons['python'];
+  if (normalized.includes('php')) return BrandIcons['php'];
+  if (normalized.includes('github')) return BrandIcons['github'];
+  if (normalized.includes('git')) return BrandIcons['git'];
+  if (normalized.includes('docker')) return BrandIcons['docker'];
+  if (normalized.includes('network') || normalized.includes('switch') || normalized.includes('router') || normalized.includes('bgp') || normalized.includes('ospf') || normalized.includes('vlan')) return BrandIcons['network'];
   return BrandIcons['network'] || null;
 };

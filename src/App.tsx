@@ -4,8 +4,6 @@ import { ThemeProvider } from './context/ThemeContext';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
 import { Chatbot } from './components/ui/Chatbot';
-import { AmbientGlow } from './components/ui/AmbientGlow';
-import { NetworkCanvas } from './components/ui/NetworkCanvas';
 import { ScrollProgress } from './components/ui/ScrollProgress';
 import { HomePage } from './pages/HomePage';
 import { ProjectsPage } from './pages/ProjectsPage';
@@ -28,8 +26,6 @@ export const App: React.FC = () => {
         <ScrollToTop />
         <ScrollProgress />
         <div className="relative flex min-h-screen flex-col bg-[#fafafa] text-neutral-900 transition-colors duration-200 dark:bg-[#0c0c0e] dark:text-neutral-100 overflow-x-hidden">
-          <AmbientGlow />
-          <NetworkCanvas />
           <Navbar />
           
           <main className="relative z-10 flex-1">
