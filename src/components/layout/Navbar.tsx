@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
             onClick={toggleTheme}
             aria-label="Ganti mode tema"
             title="Ganti mode terang/gelap"
-            className="flex h-8 w-8 items-center justify-center rounded-lg border border-neutral-200 bg-white text-neutral-700 shadow-2xs hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors cursor-pointer overflow-hidden"
+            className="flex h-9 w-9 sm:h-8 sm:w-8 items-center justify-center rounded-lg border border-neutral-200 bg-white text-neutral-700 shadow-2xs hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-colors cursor-pointer overflow-hidden"
           >
             <AnimatePresence mode="wait">
               {theme === 'dark' ? (
@@ -110,8 +110,10 @@ export const Navbar: React.FC = () => {
           {/* Mobile Menu Trigger */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Buka menu navigasi"
-            className="flex h-8 w-8 items-center justify-center rounded-lg border border-neutral-200 bg-white text-neutral-700 sm:hidden dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 cursor-pointer"
+            aria-label={mobileMenuOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-nav-menu"
+            className="flex h-9 w-9 sm:h-8 sm:w-8 items-center justify-center rounded-lg border border-neutral-200 bg-white text-neutral-700 sm:hidden dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 cursor-pointer"
           >
             {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
@@ -122,17 +124,18 @@ export const Navbar: React.FC = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
+            id="mobile-nav-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="border-b border-neutral-200 bg-white px-4 py-3 sm:hidden dark:border-neutral-800 dark:bg-neutral-950 overflow-hidden"
+            className="border-b border-neutral-200 bg-white px-4 py-3 sm:hidden dark:border-neutral-800 dark:bg-neutral-950 overflow-hidden shadow-md"
           >
-            <nav className="flex flex-col gap-1">
+            <nav className="flex flex-col gap-1.5">
               <Link
                 to="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="rounded-lg px-3 py-2 text-xs font-medium text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900"
+                className="rounded-lg px-3.5 py-2.5 text-xs font-medium text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900 active:bg-neutral-200 dark:active:bg-neutral-800 transition-colors"
               >
                 Beranda (Ringkasan)
               </Link>
@@ -141,10 +144,10 @@ export const Navbar: React.FC = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`rounded-lg px-3 py-2 text-xs font-medium ${
+                  className={`rounded-lg px-3.5 py-2.5 text-xs font-medium transition-colors ${
                     isActive(link.path)
                       ? 'bg-neutral-100 font-semibold text-neutral-900 dark:bg-neutral-900 dark:text-white'
-                      : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900'
+                      : 'text-neutral-700 hover:bg-neutral-100 dark:text-neutral-300 dark:hover:bg-neutral-900 active:bg-neutral-200 dark:active:bg-neutral-800'
                   }`}
                 >
                   {link.name}

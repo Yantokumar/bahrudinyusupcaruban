@@ -92,16 +92,16 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* Tombol Aksi */}
-      <div className="mt-7 flex flex-wrap items-center gap-3">
+      <div className="mt-7 flex flex-wrap items-center gap-2.5 sm:gap-3">
         <motion.a
           href={profileData.resumeUrl}
           onClick={handleResumeClick}
           whileHover={{ y: -2, scale: 1.02 }}
           whileTap={{ scale: 0.96 }}
           transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-          className="relative group overflow-hidden inline-flex items-center gap-2 rounded-xl bg-neutral-900 px-4 py-2.5 text-xs font-medium text-white shadow-sm hover:bg-neutral-800 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 transition-all cursor-pointer"
+          className="relative group overflow-hidden inline-flex items-center gap-2 rounded-xl bg-neutral-900 px-3.5 py-2 sm:px-4 sm:py-2.5 text-xs font-medium text-white shadow-sm hover:bg-neutral-800 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-200 transition-all cursor-pointer shrink-0"
         >
-          <FileText className="h-3.5 w-3.5 transition-transform group-hover:scale-110" />
+          <FileText className="h-3.5 w-3.5 transition-transform group-hover:scale-110 shrink-0" />
           <span>Lihat CV / Resume</span>
         </motion.a>
 
@@ -110,34 +110,34 @@ export const HeroSection: React.FC = () => {
           whileHover={{ y: -2, scale: 1.02 }}
           whileTap={{ scale: 0.96 }}
           transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-          className="inline-flex items-center gap-2 rounded-xl border border-neutral-200/90 bg-white/90 px-4 py-2.5 text-xs font-medium text-neutral-700 shadow-2xs hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/90 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-all cursor-pointer backdrop-blur-xs"
+          className="inline-flex items-center gap-2 rounded-xl border border-neutral-200/90 bg-white/90 px-3.5 py-2 sm:px-4 sm:py-2.5 text-xs font-medium text-neutral-700 shadow-2xs hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900/90 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-all cursor-pointer backdrop-blur-xs max-w-full"
         >
           {copied ? (
             <>
-              <Check className="h-3.5 w-3.5 text-emerald-500 animate-bounce" />
-              <span className="text-emerald-600 dark:text-emerald-400 font-medium">Email berhasil disalin!</span>
+              <Check className="h-3.5 w-3.5 text-emerald-500 animate-bounce shrink-0" />
+              <span className="text-emerald-600 dark:text-emerald-400 font-medium truncate">Email berhasil disalin!</span>
             </>
           ) : (
             <>
-              <Copy className="h-3.5 w-3.5 text-neutral-400" />
-              <span>Salin Email</span>
+              <Copy className="h-3.5 w-3.5 text-neutral-400 shrink-0" />
+              <span className="truncate">Salin Email</span>
             </>
           )}
         </motion.button>
       </div>
 
       {/* Rangkuman Statistik Ringkas */}
-      <div className="mt-10 grid grid-cols-3 gap-3 border-t border-dashed border-neutral-200 dark:border-neutral-800 pt-6">
+      <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-4 border-t border-dashed border-neutral-200 dark:border-neutral-800 pt-6">
         {profileData.stats.map((stat, i) => (
-          <div key={i} className="flex flex-col">
-            <span className="font-mono text-sm sm:text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+          <div key={i} className="flex flex-col min-w-0">
+            <span className="font-mono text-xs sm:text-sm md:text-base font-bold tracking-tight text-neutral-900 dark:text-neutral-100 truncate">
               {stat.value}
             </span>
-            <span className="text-xs font-medium text-neutral-700 dark:text-neutral-300 mt-0.5">
+            <span className="text-[11px] sm:text-xs font-medium text-neutral-700 dark:text-neutral-300 mt-0.5 truncate">
               {stat.label}
             </span>
             {stat.desc && (
-              <span className="text-[11px] text-neutral-400 dark:text-neutral-500">
+              <span className="text-[10px] sm:text-[11px] text-neutral-400 dark:text-neutral-500 line-clamp-2 leading-tight">
                 {stat.desc}
               </span>
             )}

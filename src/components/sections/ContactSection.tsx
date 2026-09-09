@@ -54,17 +54,17 @@ export const ContactSection: React.FC = () => {
 
             <button
               onClick={handleCopy}
-              className="inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-xs font-medium text-neutral-700 shadow-2xs hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-all cursor-pointer"
+              className="inline-flex items-center gap-2 rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-xs font-medium text-neutral-700 shadow-2xs hover:bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800 transition-all cursor-pointer max-w-full"
             >
               {copied ? (
                 <>
-                  <Check className="h-3.5 w-3.5 text-emerald-500" />
-                  <span className="text-emerald-600 dark:text-emerald-400 font-medium">Tersalin ke clipboard!</span>
+                  <Check className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+                  <span className="text-emerald-600 dark:text-emerald-400 font-medium truncate">Tersalin ke clipboard!</span>
                 </>
               ) : (
                 <>
-                  <Copy className="h-3.5 w-3.5" />
-                  <span>{profileData.socials.email}</span>
+                  <Copy className="h-3.5 w-3.5 text-neutral-400 shrink-0" />
+                  <span className="truncate">{profileData.socials.email}</span>
                 </>
               )}
             </button>

@@ -118,7 +118,7 @@ export const Chatbot: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-40">
+    <div className="fixed bottom-4 right-4 sm:bottom-5 sm:right-5 z-40 max-w-[calc(100vw-2rem)]">
       {/* Tombol Pemicu Mengambang */}
       <AnimatePresence>
         {!isOpen && (
@@ -130,13 +130,13 @@ export const Chatbot: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(true)}
             aria-label="Buka asisten virtual"
-            className="flex items-center gap-2.5 rounded-full border border-neutral-200 bg-white/90 px-4 py-2.5 text-neutral-800 shadow-lg backdrop-blur-md transition-all hover:bg-white hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-900/90 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-pointer"
+            className="flex items-center gap-2 sm:gap-2.5 rounded-full border border-neutral-200 bg-white/95 px-3.5 py-2 sm:px-4 sm:py-2.5 text-neutral-800 shadow-lg backdrop-blur-md transition-all hover:bg-white hover:shadow-xl dark:border-neutral-800 dark:bg-neutral-900/95 dark:text-neutral-100 dark:hover:bg-neutral-900 cursor-pointer"
           >
-            <div className="relative flex h-3 w-3">
+            <div className="relative flex h-2.5 w-2.5 sm:h-3 sm:w-3">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-emerald-500"></span>
+              <span className="relative inline-flex h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-emerald-500"></span>
             </div>
-            <MessageSquare className="h-4 w-4" />
+            <MessageSquare className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             <span className="text-xs font-medium">Chat dengan Yusup</span>
           </motion.button>
         )}
@@ -146,11 +146,11 @@ export const Chatbot: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+            initial={{ opacity: 0, scale: 0.95, y: 15 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+            exit={{ opacity: 0, scale: 0.95, y: 15 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            className="w-[92vw] sm:w-[380px] h-[520px] max-h-[80vh] flex flex-col rounded-2xl border border-neutral-200 bg-white/95 shadow-2xl backdrop-blur-xl dark:border-neutral-800 dark:bg-neutral-950/95 overflow-hidden"
+            className="w-[calc(100vw-2rem)] sm:w-[380px] h-[500px] max-h-[78vh] flex flex-col rounded-2xl border border-neutral-200 bg-white/95 shadow-2xl backdrop-blur-xl dark:border-neutral-800 dark:bg-neutral-950/95 overflow-hidden"
           >
             {/* Header Chat */}
             <div className="flex items-center justify-between border-b border-neutral-200/80 px-4 py-3 bg-neutral-50/80 dark:border-neutral-800/80 dark:bg-neutral-900/60">

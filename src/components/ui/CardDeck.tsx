@@ -49,23 +49,24 @@ export const CardDeck: React.FC<CardDeckProps> = ({ cards }) => {
                   zIndex,
                 }}
                 exit={{
-                  x: 340,
+                  x: 280,
                   opacity: 0,
-                  rotate: 20,
-                  transition: { duration: 0.28 },
+                  rotate: 15,
+                  transition: { duration: 0.25 },
                 }}
                 transition={{ type: 'spring', stiffness: 280, damping: 24 }}
                 drag={isTop ? 'x' : false}
                 dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={0.7}
+                dragElastic={0.65}
                 onDragEnd={(_, info) => {
-                  if (Math.abs(info.offset.x) > 60) {
+                  if (Math.abs(info.offset.x) > 50) {
                     handleNext();
                   }
                 }}
                 onClick={isTop ? handleNext : undefined}
-                whileDrag={{ scale: 1.03, cursor: 'grabbing' }}
-                whileHover={isTop ? { scale: 1.02, cursor: 'grab' } : undefined}
+                whileDrag={{ scale: 1.02, cursor: 'grabbing' }}
+                whileHover={isTop ? { scale: 1.01, cursor: 'grab' } : undefined}
+                style={{ touchAction: 'pan-y' }}
                 className="absolute inset-0 mx-auto w-full rounded-2xl border border-neutral-200/90 bg-white p-3 shadow-lg dark:border-neutral-800 dark:bg-neutral-900 cursor-grab active:cursor-grabbing overflow-hidden"
               >
                 {/* BorderBeam halus pada kartu paling atas */}

@@ -28,7 +28,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
           initial={{ opacity: 0, scale: 0.95, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 10 }}
-          className="relative z-10 w-full max-w-lg overflow-hidden rounded-2xl border border-neutral-200 bg-white p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
+          className="relative z-10 w-full max-w-lg overflow-y-auto max-h-[88vh] rounded-2xl border border-neutral-200 bg-white p-5 sm:p-6 shadow-2xl dark:border-neutral-800 dark:bg-neutral-900"
         >
           {/* Tombol Tutup */}
           <button
