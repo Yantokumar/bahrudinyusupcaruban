@@ -174,7 +174,7 @@ export const portfolioConfig: PortfolioConfig = {
       location: "Batanghari, Jambi",
       highlights: [
         "Lulus peminatan MIPA dengan landasan logika matematika dan sains yang kuat",
-        "Aktif dalam kegiatan ekstrakurikuler Teknologi Informasi & Komputer (TIK) serta kepemimpinan siswa",
+        "Aktif dalam organisasi kepengurusan OSIS (Organisasi Siswa Intra Sekolah)",
       ],
     },
     {
