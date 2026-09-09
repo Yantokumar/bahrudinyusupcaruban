@@ -1,0 +1,1 @@
+export { photoMemories } from '../config';

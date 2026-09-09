@@ -1,0 +1,1 @@
+export { profileData } from '../config';

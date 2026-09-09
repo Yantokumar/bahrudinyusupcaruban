@@ -1,0 +1,1 @@
+export { techStackData } from '../config';

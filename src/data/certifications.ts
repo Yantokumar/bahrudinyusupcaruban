@@ -1,0 +1,1 @@
+export { certificationsData } from '../config';
