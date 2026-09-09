@@ -17,10 +17,10 @@ export const portfolioConfig: PortfolioConfig = {
   profile: {
     name: "Bahrudin Yusup Caruban",
     handle: "Zhyusff.Dev",
-    title: "Network Engineer (Pemula)",
-    headline: "Pemula yang sedang belajar jaringan komputer dengan Cisco IOS dan MikroTik.",
-    bioIntro: "Mahasiswa S1 Sistem Informasi di Universitas Pamulang, saat ini fokus mempelajari dasar-dasar routing & switching.",
-    bioDetail: "Masih tahap pemula dan terus giat berlatih mengonfigurasi perangkat Cisco dan MikroTik.",
+    title: "Network & Systems",
+    headline: "Sedang belajar dan mendalami jaringan komputer dengan Cisco IOS dan MikroTik.",
+    bioIntro: "Mahasiswa S1 Sistem Informasi di Universitas Pamulang dengan minat di bidang jaringan komputer.",
+    bioDetail: "Aktif mempelajari dan berlatih konfigurasi perangkat Cisco dan MikroTik.",
     location: "Indonesia / Tersedia Remote & On-site",
     availability: {
       status: "available",
@@ -36,7 +36,7 @@ export const portfolioConfig: PortfolioConfig = {
     avatarUrl: "/profil.png",
     pixelAvatarUrl: "https://api.dicebear.com/7.x/pixel-art/svg?seed=Zhyusff&mood=happy",
     stats: [
-      { label: "Status", value: "Pemula", desc: "sedang giat belajar jaringan" },
+      { label: "Minat", value: "Jaringan", desc: "routing & switching" },
       { label: "Studi", value: "S1 SI", desc: "Universitas Pamulang" },
       { label: "Fokus Lab", value: "Cisco & MikroTik", desc: "perangkat yang dipelajari" },
     ],
