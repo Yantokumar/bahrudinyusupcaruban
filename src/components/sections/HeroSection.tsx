@@ -92,9 +92,7 @@ export const HeroSection: React.FC = () => {
       {/* Tajuk Utama & Biografi */}
       <div className="mt-8 space-y-4">
         <h2 className="text-2xl sm:text-3xl font-semibold leading-tight tracking-tight text-neutral-900 dark:text-neutral-50">
-          <span className="animate-text-shimmer">
-            {profileData.headline}
-          </span>
+          {profileData.headline}
         </h2>
         
         <p className="text-sm sm:text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
