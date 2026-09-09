@@ -14,7 +14,7 @@ export interface Project {
   description: string;
   featured?: boolean;
   isComingSoon?: boolean;
-  status: 'Aktif' | 'Dalam Proses' | 'Unggulan' | 'Karya Utama';
+  status: 'Aktif' | 'Dalam Proses' | 'Unggulan' | 'Karya Utama' | 'Coming Soon' | 'Segera Hadir';
   role: string;
   year: string;
   techStack: string[];

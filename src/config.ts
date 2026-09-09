@@ -43,9 +43,24 @@ export const portfolioConfig: PortfolioConfig = {
   },
 
   // -----------------------------------------------------------------------
-  // 2. KARYA & PROYEK PORTOFOLIO (Kosong)
+  // 2. KARYA & PROYEK PORTOFOLIO (Coming Soon)
   // -----------------------------------------------------------------------
-  projects: [],
+  projects: [
+    {
+      id: "project-coming-soon",
+      title: "Coming Soon",
+      slug: "coming-soon",
+      tagline: "Proyek dan dokumentasi jaringan akan segera hadir.",
+      description: "",
+      featured: true,
+      status: "Coming Soon",
+      isComingSoon: true,
+      role: "Network & Systems",
+      year: "2025",
+      techStack: ["Cisco IOS", "MikroTik RouterOS"],
+      imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop",
+    },
+  ],
 
   // -----------------------------------------------------------------------
   // 3. TEKNOLOGI & EKOSISTEM (Tech Stack)
