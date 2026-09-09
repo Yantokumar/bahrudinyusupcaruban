@@ -18,7 +18,7 @@ export const portfolioConfig: PortfolioConfig = {
     name: "Bahrudin Yusup Caruban",
     handle: "Zhyusff.Dev",
     title: "Network & Systems",
-    headline: "Sedang belajar dan mendalami jaringan komputer dengan Cisco IOS dan MikroTik.",
+    headline: "Tertarik dan mempelajari jaringan komputer.",
     bioIntro: "Mahasiswa S1 Sistem Informasi di Universitas Pamulang dengan minat di bidang jaringan komputer.",
     bioDetail: "Aktif mempelajari dan berlatih konfigurasi perangkat Cisco dan MikroTik.",
     location: "Indonesia / Tersedia Remote & On-site",
